@@ -1,6 +1,8 @@
+const baseUrl = window.__ENV__QlBaseUrl || '/';
+
 export default {
   siteName: '青龙',
-  apiPrefix: '/api/',
+  apiPrefix: `${baseUrl}api/`,
   authKey: 'token',
 
   /* Layout configuration, specify which layout to use for route. */
@@ -91,7 +93,7 @@ export default {
     { value: 'aibotk', label: '智能微秘书' },
     { value: 'iGot', label: 'IGot' },
     { value: 'pushPlus', label: 'PushPlus' },
-    { value: 'chat', label: '群辉chat' },
+    { value: 'chat', label: '群晖chat' },
     { value: 'email', label: '邮箱' },
     { value: 'lark', label: '飞书机器人' },
     { value: 'webhook', label: '自定义通知' },
